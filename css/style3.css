@@ -1,0 +1,455 @@
+body{
+    margin: 0;
+    padding: 0;
+    cursor: url(../sprites/01.png), text;
+    overflow: hidden;
+}
+body::before{
+    content: '';
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: url(../sprites/bgg1.png) repeat-x bottom left;
+}
+h3{
+    color: greenyellow;
+    font-size: 45px;
+    border: 2px solid blueviolet;
+    border-radius: 0 15px;
+    background-color: #000;
+    position: absolute;
+    margin: 1% 30%;
+    z-index: 5;
+    text-align: center;
+    width: 501px;
+}
+@keyframes duckfly
+{
+    0%
+    {
+        left: 100%;
+        top: 10%;
+    }
+    20%
+    {
+        left: 75%;
+        top: 30%;
+    }
+    40%
+    {
+        left: 50%;
+        top: 15%;
+    }
+    60%
+    {
+        left: 40%;
+        top: 50%;
+    }
+    80%
+    {
+        left: 20%;
+        top: 25%;
+    }
+    100%
+    {
+        left: -50%;
+        top: 10%;
+    }
+}
+
+@keyframes flying
+{
+    0%
+    {
+        bottom: -100px;
+        transform: translateX(0);
+    }
+    25%
+    {
+        bottom: 135px;
+        transform: translateX(100px);
+    }
+    45%
+    {
+        bottom: 235px;
+        transform: translateX(100px);
+    }
+    75%
+    {
+        bottom: 435px;
+        transform: translateX(100px);
+    }
+    100%
+    {
+        bottom: 768px;
+        transform: translateX(-300px);
+    }
+}
+
+input + label
+{
+    position: absolute;
+    left: -100px;
+    width: 219px;
+    height: 211px;
+    display: block;
+    z-index: 5;
+    transform: translate(-50%, 50%);
+    background: url(../sprites/6.gif) no-repeat left center;
+    background-position: 5px 0;
+    background-size: 190px;
+}
+input:checked + label{
+    opacity: 0;
+    transition: 0.5s;
+    transform: rotate(120deg);
+    transform-origin: 60%;
+    z-index: -5;
+}
+.duck:nth-last-of-type(1)
+{
+    width: 203px;
+    height: 133px;
+    display: block;
+    transform: translate(-50%, 50%);
+    background: url(../sprites/2211.gif) no-repeat left center;
+    background-position: 5px 0;
+    background-size: 162px;
+    animation: duckfly 3.5s linear 14s infinite;
+    cursor: url(../sprites/01.png), text;
+}
+.duck:nth-last-of-type(2)
+{
+    animation: duckfly 5.2s linear 21.6s infinite;
+    cursor: url(../sprites/01.png), text;
+}
+.duck:nth-last-of-type(3)
+{
+    animation: duckfly 3s linear 32.2s infinite;
+    cursor: url(../sprites/01.png), text;
+}
+.duck:nth-last-of-type(4)
+{
+    right: -121px;
+    width: 203px;
+    height: 162px;
+    display: block;
+    transform: translate(-50%, -30%);
+    background: url(../sprites/15.gif) no-repeat left center;
+    background-position: 5px 0;
+    background-size: 134px;
+    animation: duckfly 2.5s linear 112.9s infinite;
+    cursor: url(../sprites/01.png), text;
+}
+.duck:nth-last-of-type(5)
+{
+    animation: duckfly 2.8s linear 11.5s infinite;
+    cursor: url(../sprites/01.png), text;
+}
+.duck:nth-last-of-type(6)
+{
+    animation: duckfly 2.9s linear 23.9s infinite;
+    cursor: url(../sprites/01.png), text;
+}
+.duck:nth-last-of-type(7)
+{
+    animation: duckfly 4.4s linear 53.2s infinite;
+    cursor: url(../sprites/01.png), text;
+}
+.duck:nth-last-of-type(8)
+{
+    width: 203px;
+    height: 133px;
+    display: block;
+    transform: translate(-50%, -50%);
+    background: url(../sprites/2211.gif) no-repeat left center;
+    background-position: 5px 0;
+    background-size: 162px;
+    animation: duckfly 4.5s linear 4s infinite;
+    cursor: url(../sprites/01.png), text;
+}
+.duck:nth-last-of-type(9)
+{
+    animation: duckfly 2.9s linear 27.9s infinite;
+    cursor: url(../sprites/001.png), text;
+}
+.duck:nth-last-of-type(10)
+{
+    animation: duckfly 1.9s linear 53.4s infinite;
+    cursor: url(../sprites/01.png), text;
+}
+.duck:nth-last-of-type(11)
+{
+    width: 203px;
+    height: 133px;
+    display: block;
+    transform: translate(-50%, -50%);
+    background: url(../sprites/2211.gif) no-repeat left center;
+    background-position: 5px 0;
+    background-size: 162px;
+    animation: duckfly 2.5s linear 424s infinite;
+    cursor: url(../sprites/01.png), text;
+}
+.duck:nth-last-of-type(12)
+{
+    animation: duckfly 3.7s linear 21.2s infinite;
+    cursor: url(../sprites/01.png), text;
+}
+.duck:nth-last-of-type(13)
+{
+    animation: duckfly 4.8s linear 232.4s infinite;
+    cursor: url(../sprites/01.png), text;
+}
+.duck:nth-last-of-type(14)
+{
+    width: 203px;
+    height: 133px;
+    display: block;
+    transform: translate(-90%, -30%);
+    background: url(../sprites/2211.gif) no-repeat left center;
+    background-position: 5px 0;
+    background-size: 162px;
+    animation: duckfly 1.5s linear 374s infinite;
+    cursor: url(../sprites/01.png), text;
+}
+.duck:nth-last-of-type(15)
+{
+    animation: duckfly 4.9s linear 128s infinite;
+    cursor: url(../sprites/01.png), text;
+}
+.duck:nth-last-of-type(16)
+{
+    animation: duckfly 2.9s linear 36.5s infinite;
+    cursor: url(../sprites/01.png), text;
+}
+.duck:nth-last-of-type(17)
+{
+    width: 203px;
+    height: 91px;
+    display: block;
+    transform: translate(-50%, -20%);
+    background: url(../sprites/sd2.gif) no-repeat left center;
+    background-position: 5px 0;
+    background-size: 118px;
+    animation: duckfly 3.9s linear 49.5s infinite;
+    cursor: url(../sprites/01.png), text;
+}
+.duck:nth-last-of-type(18)
+{
+    animation: duckfly 2.9s linear 59.5s infinite;
+    cursor: url(../sprites/01.png), text;
+}
+.duck:nth-last-of-type(19)
+{
+    animation: duckfly 2.9s linear 156.5s infinite;
+    cursor: url(../sprites/01.png), text;
+}
+.duck:nth-last-of-type(20)
+{
+    width: 203px;
+    height: 91px;
+    display: block;
+    transform: translate(-50%, -10%);
+    background: url(../sprites/sd2.gif) no-repeat left center;
+    background-position: 5px 0;
+    background-size: 118px;
+    animation: duckfly 1.9s linear 239.5s infinite;
+    cursor: url(../sprites/01.png), text;
+}
+.duck:nth-last-of-type(21)
+{
+    animation: duckfly 2.9s linear 109.5s infinite;
+    cursor: url(../sprites/01.png), text;
+}
+.duck:nth-last-of-type(22)
+{
+    animation: duckfly 4.9s linear 249.5s infinite;
+    cursor: url(../sprites/01.png), text;
+}
+.duck:nth-last-of-type(23)
+{
+    width: 203px;
+    height: 262px;
+    display: block;
+    transform: translate(-50%, -50%);
+    background: url(../sprites/15.gif) no-repeat left center;
+    background-position: 5px 0;
+    background-size: 164px;
+    animation: duckfly 2.9s linear 219.5s infinite;
+    cursor: url(../sprites/01.png), text;
+}
+.duck:nth-last-of-type(24)
+{
+    animation: duckfly 2.9s linear 19.5s infinite;
+    cursor: url(../sprites/01.png), text;
+}
+.duck:nth-last-of-type(25)
+{
+    animation: duckfly 2.9s linear 69.5s infinite;
+    cursor: url(../sprites/01.png), text;
+}
+.duck:nth-last-of-type(26)
+{
+    height: 75px;
+    width: 75px;
+    left: 732px;
+    background: transparent;
+    border-radius: 50%;
+    transform: translate(-50%, -150%);
+    background-position: 5px 0;
+    cursor: url(../sprites/01.png), text;
+    background-color:rgb(255, 0, 242);
+    box-shadow: inset 0 0 10px rgba(255, 355, 455, 2.1);
+    animation: flying 2.2s linear 782.5s infinite;
+}
+.duck:nth-last-of-type(27)
+{
+    height: 50px;
+    width: 50px;
+    left: 815px;
+    background: transparent;
+    border-radius: 50%;
+    transform: translate(-50%, -150%);
+    background-position: 5px 0;
+    cursor: url(../sprites/01.png), text;
+    background-color: rgb(9, 245, 9);
+    box-shadow: inset 0 0 10px rgba(255, 355, 455, 2.1);
+    animation: flying 3.9s linear 389.5s infinite;
+}
+.duck:nth-last-of-type(28)
+{
+    height: 130px;
+    width: 130px;
+    right: 75px;
+    background: transparent;
+    border-radius: 50%;
+    transform: translate(-50%, -150%);
+    background-position: 5px 0;
+    cursor: url(../sprites/01.png), text;
+    background-color: rgb(253, 15, 7);
+    box-shadow: inset 0 0 10px rgba(255, 355, 455, 2.1);
+    animation: flying 2.9s linear 370.5s infinite;
+}
+.duck:nth-last-of-type(29)
+{
+    height: 45px;
+    width: 45px;
+    left: 215px;
+    background: transparent;
+    border-radius: 50%;
+    transform: translate(-50%, -150%);
+    background-position: 5px 0;
+    cursor: url(../sprites/01.png), text;
+    background-color: rgb(227, 252, 7);
+    box-shadow: inset 0 0 10px rgba(255, 355, 455, 2.1);
+    animation: flying 1.9s linear 279.5s infinite;
+}
+.duck:nth-last-of-type(30)
+{
+    height: 100px;
+    width: 100px;
+    left: 915px;
+    background: transparent;
+    border-radius: 50%;
+    transform: translate(-50%, -150%);
+    background-position: 5px 0;
+    cursor: url(../sprites/01.png), text;
+    background-color: rgb(9, 25, 248);
+    box-shadow: inset 0 0 10px rgba(255, 355, 455, 2.1);
+    animation: flying 2.9s linear 269.5s infinite;
+}
+.duck:nth-last-of-type(31)
+{
+    height: 70px;
+    width: 70px;
+    right: 1075px;
+    background: transparent;
+    border-radius: 50%;
+    transform: translate(-50%, -150%);
+    background-position: 5px 0;
+    cursor: url(../sprites/01.png), text;
+    background-color: rgb(197, 50, 111);
+    box-shadow: inset 0 0 10px rgba(255, 355, 455, 2.1);
+    animation: flying 2.9s linear 789.5s infinite;
+}
+.duck:nth-last-of-type(32)
+{
+    height: 190px;
+    width: 190px;
+    left: 865px;
+    background: transparent;
+    border-radius: 50%;
+    transform: translate(-50%, -150%);
+    background-position: 5px 0;
+    cursor: url(../sprites/01.png), text;
+    background-color: rgb(48, 83, 179);
+    box-shadow: inset 0 0 10px rgba(255, 355, 455, 2.1);
+    animation: flying 2.9s linear 690.5s infinite;
+}
+.duck:nth-last-of-type(33)
+{
+    height: 120px;
+    width: 120px;
+    right: 107px;
+    background: transparent;
+    border-radius: 50%;
+    transform: translate(-50%, -150%);
+    background-position: 5px 0;
+    cursor: url(../sprites/01.png), text;
+    background-color: rgb(252, 9, 70);
+    box-shadow: inset 0 0 10px rgba(255, 355, 455, 2.1);
+    animation: flying 2.9s linear 990.5s infinite;
+}
+.duck:nth-last-of-type(34)
+{
+    height: 105px;
+    width: 105px;
+    left: 337px;
+    background: transparent;
+    border-radius: 50%;
+    transform: translate(-50%, -150%);
+    background-position: 5px 0;
+    cursor: url(../sprites/01.png), text;
+    background-color: rgb(15, 56, 15);
+    box-shadow: inset 0 0 10px rgba(255, 355, 455, 2.1);
+    animation: flying 2.9s linear 719.5s infinite;
+}
+.duck:nth-last-of-type(35)
+{
+    height: 160px;
+    width: 160px;
+    left: 1126px;
+    background: transparent;
+    border-radius: 50%;
+    transform: translate(-50%, -150%);
+    background-position: 5px 0;
+    cursor: url(../sprites/01.png), text;
+    background-color: rgb(11, 207, 241);
+    box-shadow: inset 0 0 10px rgba(255, 355, 455, 2.1);
+    animation: flying 2.9s linear 929.5s infinite;
+}
+.score{
+    position: absolute;
+    bottom: 0;
+    height: 42px;
+    line-height: 50px;
+    background-color: #dadada;
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    font-size: 30px;
+}
+.score::after{
+    content: counter(score);
+    display: inline-block;
+}
+.score::before{
+    content: 'Score : ';
+    display: inline-block;
+    margin-left: 10px;
+}
+input:checked{
+    counter-increment: score;
+}
